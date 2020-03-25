@@ -1,0 +1,244 @@
+@font-face{
+    font-family: 'ptf56';
+    src: url('polices/PTF56F.ttf') format('truetype')
+}
+
+@font-face{
+    font-family: 'naishila-4';
+    src: url('polices/Naishila Dancing Script.ttf') format('truetype')
+}
+
+body{
+    font-family: 'naishila-4', Arial, serif;
+    width: 100%;
+    text-align: center;
+    background-color: #fdfffd;
+}
+
+header{
+    width: 100%;
+    padding: 1rem;
+    background-color: #579c87;
+    left: 0;
+    top: 0;
+    position: fixed;
+}
+
+header h1{
+    font-family: 'ptf56', Arial, serif;
+    color: #fdcb46;
+    text-align: center;
+    font-size: 3rem;
+}
+
+section{
+    padding-top: 15rem;
+    padding-bottom: 10rem;
+}
+
+section h1{
+    font-size: 2.5em;
+    padding-bottom: 3rem;
+    background: linear-gradient(to right, #3d9339 0%, #bfff7e 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+article{ 
+    margin: auto;
+}
+
+span{
+    display: inline-block;
+    width: 70%;
+    margin: auto;
+    text-align: left;
+    font-size: 1.2em;
+    padding: 1rem;
+}
+
+mark{
+    display: inline-block;
+    max-width: 30%;
+    margin: auto;
+    background-color: #fdfffd;
+    text-align: left;
+    font-size: 1em
+}
+
+h2{
+    background-color: #fdfffd;
+    font-size: 2em;
+    font-weight: bold;
+}
+
+article h2{
+    text-decoration: none;
+    padding-bottom: 3rem;
+}
+
+article h2:hover {
+    background: url("images/LaNote-gauche.miniVF.svg")no-repeat bottom;
+    animation: animate 3s linear
+}
+
+@keyframes animate {
+  0% {
+    background-position: -300%;
+  }
+  100% {
+    background-position: 300%;
+  }
+}
+
+@keyframes secouezMoi {
+    10%, 90% {
+      transform: translate3d(-1px, 0, 0);
+    }
+    
+    20%, 80% {
+      transform: translate3d(2px, 0, 0);
+    }
+  
+    30%, 50%, 70% {
+      transform: translate3d(-4px, 0, 0);
+    }
+  
+    40%, 60% {
+      transform: translate3d(4px, 0, 0);
+    }
+}
+
+.mentions:hover{
+    color: red;
+    animation: secouezMoi 0.82s cubic-bezier(.36,.07,.19,.97) both;
+    transform: translate3d(0, 0, 0);
+    backface-visibility: hidden;
+    perspective: 1000px;
+}
+
+.contact:hover{
+    color: red;
+    animation: secouezMoi 0.82s cubic-bezier(.36,.07,.19,.97) both;
+    transform: translate3d(0, 0, 0);
+    backface-visibility: hidden;
+    perspective: 1000px;
+}
+
+img{
+    width: 0;
+}
+
+a{
+    text-decoration: none;
+    width: 100%;
+    color: #fdcb46;
+    text-align: center;
+}
+
+footer{
+    font-family: 'ptf56', Arial, serif;
+    width: 100%;
+    padding: 1em;
+    background-color: #579c87;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    left: 0;
+    bottom: 0;
+    position: fixed;
+}
+
+/*################################################## Tablettes ##################################################*/
+
+@media screen and (min-width: 640px) and (max-width: 1023px)
+{
+    section{
+        width: 100%;
+        margin: auto;
+        font-size: 1.1em;
+    }
+
+    article h2{
+        background: none;
+    }
+    
+    .titreMenu{
+        display: grid;
+        grid-template-rows: 1fr 1fr 1fr;      
+    }
+
+    .titreMenu img{
+        width: 30%;
+        margin-top: 1em;
+        margin: auto;
+    }
+    @keyframes animate {
+        0% {
+            background-position: -10%;
+        }
+        100% {
+            background-position: 100%;
+        }
+    }
+
+}
+/*################################################## Desktop ##################################################*/
+
+@media screen and (min-width: 1024px)
+{   
+    body{
+        width: 1100px;
+        margin: auto;
+        border: solid 1px;
+        background-color: white;
+    }
+
+    header, footer{
+        margin: 0;
+        padding-right: 0;
+        padding-left: 0;
+        width: 1100px;
+        margin: auto;
+        left: auto;
+    }
+
+    section{
+        background-color: #fdfffd;
+        width: 100%;
+        margin: auto; 
+        font-size: 1.2rem;
+    }
+
+    section h1{
+        margin-top: 0;
+        padding-top: 2.5rem;
+    }
+
+    h2{
+        background-color: #fdfffd;
+        font-size: 1.5em;
+        flex-wrap: nowrap;
+    }
+
+    article h2{
+        background: none;
+    }
+    
+    .titreMenu{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;      
+    }
+
+    .titreMenu img{
+        width: 100%;
+        margin-top: 2em;
+    }
+
+    @keyframes animate {
+        0% {
+            background-position: 250%;
+        }
+        100% {
+            background-position: 0%;
+        }
+    }
+}

@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   id="svg8"
+   version="1.1"
+   viewBox="0 0 136.56636 4.401137"
+   height="4.4011369mm"
+   width="136.56636mm">
+  <defs
+     id="defs2">
+    <filter
+       id="filter8681"
+       style="color-interpolation-filters:sRGB"
+       x="-0.25"
+       width="1.5"
+       y="-0.25"
+       height="1.5">
+      <feGaussianBlur
+         id="feGaussianBlur8665"
+         result="result8"
+         stdDeviation="5" />
+      <feTurbulence
+         id="feTurbulence8667"
+         baseFrequency="0.03"
+         numOctaves="2"
+         type="turbulence"
+         result="result7"
+         seed="25" />
+      <feComposite
+         id="feComposite8669"
+         in="result8"
+         operator="in"
+         result="result6"
+         in2="result8" />
+      <feDisplacementMap
+         id="feDisplacementMap8671"
+         result="result4"
+         scale="120"
+         yChannelSelector="A"
+         xChannelSelector="A"
+         in2="result6"
+         in="result7" />
+      <feComposite
+         k4="0"
+         id="feComposite8673"
+         k2="0.25"
+         k3="2.5"
+         k1="2"
+         in="SourceGraphic"
+         operator="arithmetic"
+         result="result2"
+         in2="result4" />
+      <feComposite
+         id="feComposite8675"
+         in2="SourceGraphic"
+         operator="in"
+         in="result2"
+         result="fbSourceGraphic" />
+      <feBlend
+         id="feBlend8677"
+         result="result91"
+         in2="fbSourceGraphic"
+         mode="screen" />
+      <feBlend
+         id="feBlend8679"
+         in2="result91"
+         mode="multiply" />
+    </filter>
+  </defs>
+  <metadata
+     id="metadata5">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     transform="translate(-15.349329,-148.4902)"
+     id="layer1" />
+  <g
+     transform="translate(-15.349329,-148.4902)"
+     id="layer2">
+    <path
+       transform="matrix(0.45043256,7.3258917e-4,-0.37908532,0.37158724,93.710316,92.928019)"
+       d="m 72.478243,151.48019 c 16.620211,1.4575 29.881597,2.69129 47.570757,3.77213 14.3876,0.8791 28.77795,1.89738 43.36948,2.22125 14.22472,0.31572 28.50478,-0.20642 42.75717,-0.30963 0,0 -34.75637,1.82632 -34.75637,1.82632 v 0 c -30.64059,-0.99869 -40.61425,-1.33245 -77.58819,-2.46844 -57.3093,-1.76078 -34.211767,-1.27228 -83.461179,-1.8769 0,0 62.108332,-3.16473 62.108332,-3.16473 z"
+       id="path8557"
+       style="fill:#00ad00;fill-opacity:1;stroke:#000000;stroke-width:0.06838372;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;filter:url(#filter8681)" />
+  </g>
+</svg>

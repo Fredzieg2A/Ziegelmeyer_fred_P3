@@ -1,0 +1,398 @@
+@font-face{
+    font-family: 'ptf56';
+    src: url('polices/PTF56F.ttf') format('truetype')
+}
+
+@font-face{
+    font-family: 'kaushan-1';
+    src: url('polices/KaushanScript-Regular.otf') format('truetype')
+}
+
+@font-face{
+    font-family: 'croissant-2';
+    src: url('polices/CroissantOne-Regular.ttf') format('truetype')
+}
+
+@font-face{
+    font-family: 'alexbrush-3';
+    src: url(polices/AlexBrush.ttf) format('truetype')
+}
+
+@font-face{
+    font-family: 'naishila-4';
+    src: url('polices/Naishila Dancing Script.ttf') format('truetype')
+}
+
+
+body{
+	max-width: 100%;
+	margin: auto;
+	display: flex;
+	flex-direction: column;
+}
+
+header{
+    width: 100%;
+    padding: 1rem;
+    background-color: #579c87;
+    left: 0;
+    top: 0;
+    position: fixed;
+}
+
+header h1{
+	font-family: 'ptf56', Arial, serif;
+	color: #fdcb46;
+	margin: auto;
+	padding: 0.5em;
+	text-align: center;
+	font-size: 4rem;
+}
+
+.laNote{
+	background: url("images/music-mini.png") no-repeat top 6rem center;
+	width: 400px;
+	height: 600px;
+	margin: auto;
+	background-color: #FFDFD7;
+	margin-top: 15rem;
+	transition: transform 450ms, background-color 300ms 150ms;
+	box-shadow: 6px 12px 10px #e1e2e4;
+	opacity: 1;
+	filter: alpha(opacity=100);
+}
+
+.laNote:hover{
+    transform: scale(1.2);
+    color: white;
+    transform: translate(150px -7vh);
+    opacity: 0.5;
+    filter: alpha(opacity=50);
+}
+
+.laNote h2{
+	font-family: 'kaushan-1', Arial, serif;
+	font-size: 2rem;
+	color: #000;
+	text-align: center;
+	padding-top: 0.7em;
+}
+
+.laNote h3{
+	max-width: 90%;
+	margin: auto;
+	font-family: 'kaushan-1', Arial, serif;
+	font-size: 2.5rem;
+	color: #000;
+	padding-top: 35%;
+	text-align: center;
+	padding-top: 7em;
+}
+
+.leChic{
+	width: 400px;
+	height: 600px;
+	margin: auto;
+	background-color: #fff5fe;
+	margin-top: 5em;
+	transition: transform 450ms, background-color 300ms 150ms;
+	box-shadow: 6px 12px 10px #e1e2e4;
+	opacity: 1;
+	filter: alpha(opacity=100);
+}
+
+.leChic:hover{
+    transform: scale(1.2);
+    color: white;
+    transform: translate(150px -7vh);
+    opacity: 0.5;
+    filter: alpha(opacity=50);
+}
+
+.leChic h2{
+	font-family: 'croissant-2', Arial, serif;
+	font-size: 2rem;
+	text-align: center;
+	color: #ec8a15;
+}
+
+.leChic h3{
+	max-width: 90%;
+	margin: auto;
+	padding-top: 3.5em;
+	font-family: 'croissant-2', Arial, serif;
+	font-size: 2.5rem;
+	text-align: center;
+	padding-top: 35%;
+	background-image: linear-gradient(155deg, #ec8a15, #9639ed);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.leDelice{
+	width: 400px;
+	height: 600px;
+	margin: auto;
+	background-color: #eff3f7;
+	margin-top: 5em;
+	transition: transform 450ms, background-color 300ms 150ms;
+	box-shadow: 6px 12px 10px #e1e2e4;
+	opacity: 1;
+	filter: alpha(opacity=100);
+}
+
+.leDelice:hover{
+    transform: scale(1.2);
+    color: white;
+    transform: translate(150px -7vh);
+    opacity: 0.5;
+    filter: alpha(opacity=50);
+}
+
+.leDelice h2{
+	font-family: 'alexbrush-3', Arial, serif;
+	font-size: 3rem;
+	text-align: center;
+	color: #0887fb;
+}
+
+.leDelice h3{
+	max-width: 90%;
+	margin: auto;
+	font-family: 'alexbrush-3', Arial, serif;
+	font-size: 3.5rem;
+	text-align: center;
+	padding-top: 35%;
+	background-image: linear-gradient(155deg, #0431df, #2bc1f8);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-fill-color: transparent;
+}
+
+.laPalette{
+	width: 400px;
+	height: 600px;
+	margin: auto;
+	background-color: #fdfffd;
+	margin-top: 5em;
+	transition: transform 450ms, background-color 300ms 150ms;
+	box-shadow: 6px 12px 10px #e1e2e4;
+	opacity: 1;
+	filter: alpha(opacity=100);
+}
+
+.laPalette:hover{
+    transform: scale(1.2);
+    color: white;
+    transform: translate(150px -7vh);
+    opacity: 0.5;
+    filter: alpha(opacity=50);
+}
+
+.laPalette h2{
+	font-family: 'naishila-4', Arial, serif;
+	font-size: 2rem;
+	text-align: center;
+	color: #3d9339;
+	padding-top: 0.4em;
+}
+.laPalette h3{
+	max-width: 90%;
+	margin: auto;
+	font-family: 'naishila-4', Arial, serif;
+	font-size: 2.5rem;
+	text-align: center;
+	padding-top: 35%;
+	background-image: linear-gradient(155deg, #3d9339, #bfff7e);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-fill-color: transparent;
+}
+
+.btn{
+	width: 300px;
+	background-color: #579c87;	
+    border: 4px solid;
+    border-radius: 1rem;
+    cursor: pointer;
+    font-size: 1rem;
+    overflow: hidden;
+    margin: auto;
+    margin-top: 5em;
+    margin-bottom: 10em;
+    text-align: center;
+    transition: transform 450ms, background-color 300ms 150ms;
+}
+
+.btn p{
+ 	font-family: sans-serif;
+ 	text-decoration: none;
+  	text-transform: uppercase;
+  	letter-spacing: 4px;
+  	padding-left: 1em;
+   	padding-right: 1em; 
+   	font-size: 1em;
+}
+
+.btn:hover{
+	background-color: #a47fdc;
+	color: darkseagreen;
+    transform: scale(1.2);
+    transform: translate(150px -7vh);
+
+}
+
+.btn mark {
+	font-size: 2em;
+  	background: linear-gradient(90deg, #000, #fff, #a47fdc);
+  	background-repeat: no-repeat;
+  	background-size: 80%;
+  	animation: animate 3s linear infinite;
+  	-webkit-background-clip: text;
+  	-webkit-text-fill-color: rgba(255, 255, 255, 0);
+  	text-decoration: none;
+}
+
+@keyframes animate {
+  0% {
+    background-position: -500%;
+  }
+  100% {
+    background-position: 500%;
+  }
+}
+
+@keyframes secouezMoi {
+	10%, 90% {
+	  transform: translate3d(-1px, 0, 0);
+	}
+	
+	20%, 80% {
+	  transform: translate3d(2px, 0, 0);
+	}
+  
+	30%, 50%, 70% {
+	  transform: translate3d(-4px, 0, 0);
+	}
+  
+	40%, 60% {
+	  transform: translate3d(4px, 0, 0);
+	}
+  }
+
+.mentions:hover{
+	color: red;
+	animation: secouezMoi 0.82s cubic-bezier(.36,.07,.19,.97) both;
+	transform: translate3d(0, 0, 0);
+	backface-visibility: hidden;
+	perspective: 1000px;
+}
+
+.contact:hover{
+	color: red;
+	animation: secouezMoi 0.82s cubic-bezier(.36,.07,.19,.97) both;
+	transform: translate3d(0, 0, 0);
+	backface-visibility: hidden;
+	perspective: 1000px;
+}
+
+a{
+    text-decoration: none;
+    width: 100%;
+    color: #fdcb46;
+    text-align: center;
+}
+
+footer{
+    font-family: 'ptf56', Arial, serif;
+    width: 100%;
+    padding: 1em;
+    background: #579c87;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    left: 0;
+    bottom: 0;
+    position: fixed;
+}
+/*################################################## Tablettes ##################################################*/
+
+@media screen and (min-width: 640px) and (max-width: 1024px)
+{
+	section{
+		display: flex;
+		flex-direction: column;
+	}
+
+	.laNote, .leChic, .leDelice, .laPalette{
+		margin-top: 15rem;
+		width: 350px;
+		height: 550px;
+	}
+
+	.leDelice, .laPalette{
+		margin-top: 5rem;
+	}
+
+	.Menus{
+		display: flex;
+		flex-wrap: wrap;
+	}
+}
+
+/*################################################## Desktop ##################################################*/
+
+
+@media screen and (min-width: 1025px)
+{
+	body{
+		width: 1000px;
+		margin: auto;
+		border: solid 1px #fdcb46;
+	}
+
+	header, footer{
+		margin: 0;
+		padding-right: 0;
+		padding-left: 0;
+		width: 1000px;
+		margin: auto;
+		left: auto;
+	}
+
+	.Menus{
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-around;
+		width: 1000px;
+		margin: auto;
+	}
+
+	.Menus h3{
+		padding-top: 5rem;
+		font-size: 1.5em;
+	}
+
+	.laNote, .leChic, .leDelice, .laPalette{
+		margin-top: 13rem;
+		width: 450px;
+		height: 300px;
+	}
+
+	.leDelice{
+		margin-top: 2rem;
+	}
+
+	.leDelice, .laPalette{
+		margin-top: 2rem;
+	}
+
+	.laNote{
+		background: url("images/music-mini.png") no-repeat top 1rem center;
+		background-size: 10%; 
+		background-color: #FFDFD7;
+	}
+}
+

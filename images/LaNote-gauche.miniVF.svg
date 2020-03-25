@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="136.56636mm"
+   height="4.4011369mm"
+   viewBox="0 0 136.56636 4.401137"
+   version="1.1"
+   id="svg8"
+   inkscape:version="0.92.4 (5da689c313, 2019-01-14)"
+   sodipodi:docname="LaNote-gauche.miniVF.svg">
+  <defs
+     id="defs2">
+    <filter
+       inkscape:label="Flex Metal"
+       inkscape:menu="Materials"
+       inkscape:menu-tooltip="Bright, polished uneven metal casting, colorizable"
+       height="1.5"
+       y="-0.25"
+       width="1.5"
+       x="-0.25"
+       style="color-interpolation-filters:sRGB"
+       id="filter8681">
+      <feGaussianBlur
+         stdDeviation="5"
+         result="result8"
+         id="feGaussianBlur8665" />
+      <feTurbulence
+         seed="25"
+         result="result7"
+         type="turbulence"
+         numOctaves="2"
+         baseFrequency="0.03"
+         id="feTurbulence8667" />
+      <feComposite
+         in2="result8"
+         result="result6"
+         operator="in"
+         in="result8"
+         id="feComposite8669" />
+      <feDisplacementMap
+         in="result7"
+         in2="result6"
+         xChannelSelector="A"
+         yChannelSelector="A"
+         scale="120"
+         result="result4"
+         id="feDisplacementMap8671" />
+      <feComposite
+         in2="result4"
+         result="result2"
+         operator="arithmetic"
+         in="SourceGraphic"
+         k1="2"
+         k3="2.5"
+         k2="0.25"
+         id="feComposite8673"
+         k4="0" />
+      <feComposite
+         result="fbSourceGraphic"
+         in="result2"
+         operator="in"
+         in2="SourceGraphic"
+         id="feComposite8675" />
+      <feBlend
+         mode="screen"
+         in2="fbSourceGraphic"
+         result="result91"
+         id="feBlend8677" />
+      <feBlend
+         mode="multiply"
+         in2="result91"
+         id="feBlend8679" />
+    </filter>
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="1.7926112"
+     inkscape:cx="46.668018"
+     inkscape:cy="7.4248495"
+     inkscape:document-units="mm"
+     inkscape:current-layer="layer2"
+     showgrid="true"
+     inkscape:window-width="1920"
+     inkscape:window-height="1017"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1">
+    <inkscape:grid
+       type="xygrid"
+       id="grid8683"
+       originx="-15.349329"
+       originy="-144.10868" />
+  </sodipodi:namedview>
+  <metadata
+     id="metadata5">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Calque 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-15.349329,-148.4902)" />
+  <g
+     inkscape:groupmode="layer"
+     id="layer2"
+     inkscape:label="Calque 2"
+     transform="translate(-15.349329,-148.4902)">
+    <path
+       style="fill:#008000;fill-opacity:1;stroke:#000000;stroke-width:0.06838372;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;filter:url(#filter8681)"
+       id="path8557"
+       d="m 72.478243,151.48019 c 16.620211,1.4575 29.881597,2.69129 47.570757,3.77213 14.3876,0.8791 28.77795,1.89738 43.36948,2.22125 14.22472,0.31572 28.50478,-0.20642 42.75717,-0.30963 0,0 -34.75637,1.82632 -34.75637,1.82632 v 0 c -30.64059,-0.99869 -40.61425,-1.33245 -77.58819,-2.46844 -57.3093,-1.76078 -34.211767,-1.27228 -83.461179,-1.8769 0,0 62.108332,-3.16473 62.108332,-3.16473 z"
+       inkscape:connector-curvature="0"
+       transform="matrix(0.45043256,7.3258917e-4,-0.37908532,0.37158724,93.710316,92.928019)"
+       inkscape:transform-center-x="-26.166276"
+       inkscape:transform-center-y="-0.22605697" />
+  </g>
+</svg>

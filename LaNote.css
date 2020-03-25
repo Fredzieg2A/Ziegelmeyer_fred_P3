@@ -1,0 +1,257 @@
+@font-face{
+    font-family: 'ptf56';
+    src: url('polices/PTF56F.ttf') format('truetype')
+}
+
+@font-face{
+    font-family: 'kaushan-1';
+    src: url('polices/KaushanScript-Regular.otf') format('truetype')
+}
+
+body{
+    font-family: 'kaushan-1', Arial, serif;
+    text-align: center;
+    padding-top: 5rem;
+    padding-bottom: 3rem;
+}
+
+body h1{
+    width: 100%;
+    padding-top: 1rem;
+    font-size: 2.5em;
+}
+
+section{
+    background: #FFDFD7 url("images/music-mini.png") no-repeat top 8rem center;
+    background-color: #FFDFD7;
+    padding-top: 10rem;
+    padding-bottom: 5rem;
+}
+
+header{
+    width: 100%;
+    padding: 1rem;
+    background-color: #579c87;
+    left: 0;
+    top: 0;
+    position: fixed;
+}
+
+header h1{
+    font-family: 'ptf56', Arial, serif;
+    color: #fdcb46;
+    text-align: center;
+    font-size: 3rem;
+}
+
+span{
+    display: inline-block;
+    width:  65%;
+    text-align: left;
+    font-size: 1.5em;
+    padding: 1rem;
+}
+
+mark{
+	background-color: #FFDFD7;
+    display: inline-block;
+    max-width: 35%;
+    text-align: left;
+    font-size: 1.5em;
+    padding: 1rem;
+}
+
+h2{
+    background-color: #FFDFD7;
+	padding-bottom: 1em;
+	font-size: 2rem;
+}
+
+article h2{
+    text-decoration: none;
+    padding-bottom: 3rem;
+
+}
+
+article h2:hover {
+    background: url("images/imgMenu-droite.png")no-repeat bottom;
+    animation: animate 4s linear;
+    background-size: 60%;
+}
+
+@keyframes animate {
+  0% {
+    background-position: -100%;
+  }
+  100% {
+    background-position: 100%;
+  }
+}
+
+@keyframes secouezMoi {
+    10%, 90% {
+      transform: translate3d(-1px, 0, 0);
+    }
+    
+    20%, 80% {
+      transform: translate3d(2px, 0, 0);
+    }
+  
+    30%, 50%, 70% {
+      transform: translate3d(-4px, 0, 0);
+    }
+  
+    40%, 60% {
+      transform: translate3d(4px, 0, 0);
+    }
+}
+
+.mentions:hover{
+    color: red;
+    animation: secouezMoi 0.82s cubic-bezier(.36,.07,.19,.97) both;
+    transform: translate3d(0, 0, 0);
+    backface-visibility: hidden;
+    perspective: 1000px;
+}
+
+.contact:hover{
+    color: red;
+    animation: secouezMoi 0.82s cubic-bezier(.36,.07,.19,.97) both;
+    transform: translate3d(0, 0, 0);
+    backface-visibility: hidden;
+    perspective: 1000px;
+}
+
+article img{
+    width: 0;
+}
+
+.notebasse{
+	display: grid;
+	grid-template-columns: 40% 60%;
+	align-items: start;
+    background-color: #FFDFD7;
+}
+
+.notebasse span{
+	font-size: 2.2rem;
+	text-align: left;
+	margin-top: 1.3rem;
+}
+
+.notebasse img{
+	padding-left: 55%;
+    padding-top: 1rem;
+    padding-bottom: 3rem;
+}
+
+a{
+    text-decoration: none;
+    width: 100%;
+    color: #fdcb46;
+    text-align: center;
+}
+
+footer{
+    font-family: 'ptf56', Arial, serif;
+    width: 100%;
+    padding: 1em;
+    background-color: #579c87;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    left: 0;
+    bottom: 0;
+    position: fixed;
+}
+/*################################################## Tablettes ##################################################*/
+
+@media screen and (min-width: 640px) and (max-width: 1023px)
+{
+    body{
+        width: 100%;
+        margin: auto;
+        font-size: 1.1em;
+    }
+    
+    .titreMenu{
+        display: grid;
+        grid-template-rows: 1fr 1fr 1fr;      
+    }
+
+    .titreMenu img{
+        width: 30%;
+        margin-top: 1em;
+        margin: auto;
+    }
+
+    .notebasse img{
+		margin: auto;
+    }
+
+    article h2:hover {
+    background-size: 30%;
+}
+
+    @keyframes animate {
+        0% {
+            background-position: 0%;
+        }
+        100% {
+            background-position: 80%;
+        }
+    }   
+}
+/*################################################## Grands écransz ##################################################*/
+
+@media screen and (min-width: 1024px)
+{
+    body{
+        width: 1100px;
+        margin: auto;
+        background-color: white;
+    }
+
+    section{
+        width: 100%;
+        margin: auto; 
+        font-size: 1.2rem;
+    }
+
+    header, footer{
+        margin: 0;
+        padding-right: 0;
+        padding-left: 0;
+        width: 1100px;
+        margin: auto;
+        left: auto;
+    }
+   
+    p h2{
+        font-size: 1.5em;
+        font-weight: bold;
+    }
+
+    .titreMenu{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;      
+    }
+
+    .titreMenu img{
+        width: 100%;
+        margin-top: 2em;
+    }
+
+    .notebasse img{
+		margin: auto;
+    }
+
+    @keyframes animate {
+        0% {
+            background-position: -150%;
+        }
+        100% {
+            background-position: 50%;
+        }
+    }		
+}
+

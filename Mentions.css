@@ -1,0 +1,101 @@
+@font-face{
+    font-family: 'ptf56';
+    src: url('polices/PTF56F.ttf') format('truetype')
+}
+
+body{
+    width: auto;
+    text-align: center;
+}
+
+header{
+    width: 100%;
+    padding: 1rem;
+    background-color: #579c87;
+    left: 0;
+    top: 0;
+    position: fixed;
+}
+
+header h1{
+    font-family: 'ptf56', Arial, serif;
+    color: #fdcb46;
+    text-align: center;
+    font-size: 3rem;
+}
+
+section{
+	font-family: 'ptf56', Arial, serif;
+	width: 80%;
+	margin: auto;
+	font-size: 1.5em;
+	padding-top: 15rem;
+	padding-bottom: 5rem;
+}
+
+section p{
+	padding-top: 0;
+	text-align: justify;
+}
+
+h2{
+    font-size: 1.3em;
+    text-align: center;
+    font-weight: bold;
+}
+
+a{
+    text-decoration: none;
+    width: 100%;
+    color: #fdcb46;
+    text-align: center;
+}
+
+@keyframes secouezMoi {
+    10%, 90% {
+      transform: translate3d(-1px, 0, 0);
+    }
+    
+    20%, 80% {
+      transform: translate3d(2px, 0, 0);
+    }
+  
+    30%, 50%, 70% {
+      transform: translate3d(-4px, 0, 0);
+    }
+  
+    40%, 60% {
+      transform: translate3d(4px, 0, 0);
+    }
+}
+
+.mentions:hover{
+    color: red;
+    animation: secouezMoi 0.82s cubic-bezier(.36,.07,.19,.97) both;
+    transform: translate3d(0, 0, 0);
+    backface-visibility: hidden;
+    perspective: 1000px;
+}
+
+.contact:hover{
+    color: red;
+    animation: secouezMoi 0.82s cubic-bezier(.36,.07,.19,.97) both;
+    transform: translate3d(0, 0, 0);
+    backface-visibility: hidden;
+    perspective: 1000px;
+}
+
+footer{
+    font-family: 'ptf56', Arial, serif;
+    width: 100%;
+    padding: 1em;
+    background-color: #579c87;
+    font-size: 0.8em;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    left: 0;
+    bottom: 0;
+    position: fixed;
+}
+
+
