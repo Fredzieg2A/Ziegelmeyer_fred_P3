@@ -58,7 +58,7 @@ article
 span
 {
 	display: inline-block;
-	width: 70%;
+	width: 80%;
 	margin: auto;
 	text-align: left;
 	font-size: 1.2em;
@@ -68,11 +68,13 @@ span
 mark
 {
 	display: inline-block;
-	max-width: 30%;
+	max-width: 20%;
 	margin: auto;
 	background-color: #fdfffd;
 	text-align: left;
-font-size: 1em}
+	font-size: 1em;
+	font-style: italic;
+}
 
 h2
 {
@@ -84,25 +86,17 @@ h2
 article h2
 {
 	text-decoration: none;
+	background: linear-gradient(to top, 0%, 4px, transparent 5px);
+	background: url("images/LaNote-gauche.miniVF.svg") no-repeat;
+	line-height: 1rem;
+	background-size: 0 100%;
+	transition: background-size .3s;
 	padding-bottom: 3rem;
 }
 
 article h2:hover
 {
-	background: url("images/LaNote-gauche.miniVF.svg")no-repeat bottom;
-animation: animate 3s linear}
-
-@keyframes animate
-{
-	0%
-	{
-		background-position: 300%;
-	}
-
-	100%
-	{
-		background-position: -300%;
-	}
+	background-size: 100% 100%;
 }
 
 @keyframes secouezMoi
@@ -149,6 +143,7 @@ animation: animate 3s linear}
 img
 {
 	width: 0;
+	padding-bottom: 1.5rem;
 }
 
 a
@@ -184,33 +179,16 @@ footer
 
 	article h2
 	{
-		background: none;
-	}
-
-	.titreMenu
-	{
-		display: grid;
-		grid-template-rows: 1fr 1fr 1fr;
+		line-height: 0.3rem;
+		width: 60%;
+		margin: auto;
 	}
 
 	.titreMenu img
 	{
-		width: 30%;
-		margin-top: 1em;
+		width: 50%;
+		margin-top: 1rem;
 		margin: auto;
-	}
-
-	@keyframes animate
-	{
-		0%
-		{
-			background-position: -10%;
-		}
-
-		100%
-		{
-			background-position: 100%;
-		}
 	}
 }
 
@@ -253,12 +231,6 @@ footer
 	{
 		background-color: #fdfffd;
 		font-size: 1.5em;
-		flex-wrap: nowrap;
-	}
-
-	article h2
-	{
-		background: none;
 	}
 
 	.titreMenu
@@ -271,18 +243,5 @@ footer
 	{
 		width: 100%;
 		margin-top: 2em;
-	}
-
-	@keyframes animate
-	{
-		0%
-		{
-			background-position: 250%;
-		}
-
-		100%
-		{
-			background-position: 0%;
-		}
 	}
 }
