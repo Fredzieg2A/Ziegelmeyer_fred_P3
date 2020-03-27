@@ -53,7 +53,7 @@ header h1
 span
 {
 	display: inline-block;
-	width:  65%;
+	width:  80%;
 	text-align: left;
 	font-size: 1.5em;
 	padding: 1rem;
@@ -63,7 +63,7 @@ mark
 {
 	background-color: #FFDFD7;
 	display: inline-block;
-	max-width: 35%;
+	max-width: 20%;
 	text-align: left;
 	font-size: 1.5em;
 	padding: 1rem;
@@ -79,27 +79,17 @@ h2
 article h2
 {
 	text-decoration: none;
+	background: linear-gradient(to top, 0%, 4px, transparent 5px);
+	background: url("images/imgMenu-droite.svg") no-repeat;
+	line-height: 1rem;
+	background-size: 0 100%;
+	transition: background-size .3s;
 	padding-bottom: 3rem;
 }
 
 article h2:hover
 {
-	background: url("images/imgMenu-droite.png")no-repeat bottom;
-	animation: animate 4s linear;
-	background-size: 60%;
-}
-
-@keyframes animate
-{
-	0%
-	{
-		background-position: -100%;
-	}
-
-	100%
-	{
-		background-position: 100%;
-	}
+	background-size: 100% 100%;
 }
 
 @keyframes secouezMoi
@@ -146,6 +136,7 @@ article h2:hover
 article img
 {
 	width: 0;
+	padding-bottom: 1.5rem;
 }
 
 .notebasse
@@ -201,10 +192,11 @@ footer
 		font-size: 1.1em;
 	}
 
-	.titreMenu
+	article h2
 	{
-		display: grid;
-		grid-template-rows: 1fr 1fr 1fr;
+		line-height: 0.3rem;
+		width: 40%;
+		margin: auto;
 	}
 
 	.titreMenu img
@@ -217,24 +209,6 @@ footer
 	.notebasse img
 	{
 		margin: auto;
-	}
-
-	article h2:hover
-	{
-		background-size: 30%;
-	}
-
-	@keyframes animate
-	{
-		0%
-		{
-			background-position: 0%;
-		}
-
-		100%
-		{
-			background-position: 80%;
-		}
 	}
 }
 
@@ -287,18 +261,5 @@ footer
 	.notebasse img
 	{
 		margin: auto;
-	}
-
-	@keyframes animate
-	{
-		0%
-		{
-			background-position: -150%;
-		}
-
-		100%
-		{
-			background-position: 50%;
-		}
 	}
 }
