@@ -400,9 +400,13 @@ footer
 
 	.laNote, .leChic, .leDelice, .laPalette
 	{
+		margin-right: 3rem;
+		margin-left: 3rem;
 		margin-top: 13rem;
-		width: 450px;
-		height: 300px;
+		width: 200px;
+		height: 280px;
+		padding: 2rem;
+
 	}
 
 	.leDelice
